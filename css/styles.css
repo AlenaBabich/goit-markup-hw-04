@@ -433,18 +433,16 @@ img {
   margin-bottom: 8px; /* Відступ від боксу до заголовка Strategy */
    border: 1px solid #8e8f99; /* Додай це */
 }
-
+.features-item {
+  width: calc((100% - 72px) / 4);
+}
 
 /* 2. Специфические стили ТОЛЬКО для списка команды */
 .team-list {
   flex-wrap: wrap;         /* Чтобы карточки переносились */
   justify-content: center; /* Чтобы карточки стояли по центру */
 }
-.team-item {
-  background-color: #ffffff;
-  
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
+
 
 /* Ефект накладання (Overlay) у портфоліо */
 
@@ -501,11 +499,6 @@ img {
   margin-right: 120px; 
 }
 
-
-.team-item {
-  background-color: #ffffff;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
 
 
 .nav-list {
