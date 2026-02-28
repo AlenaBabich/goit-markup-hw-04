@@ -90,6 +90,7 @@ ul {
 }
 .nav-link.current {
 position: relative;
+color: #404bbf; 
 }
 .nav-link:hover,
 .nav-link:focus  {
@@ -126,27 +127,23 @@ position: relative;
 }
 
 .hero-btn {
+  background-color: #4d5ae5;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
   display: block;
   min-width: 169px;
   height: 56px;
   border: none;
   background-color: #4d5ae5;
   border-radius: 4px;
-  padding: 16px 32px;
   margin: 0 auto;
-  color: #ffffff;
-  cursor: pointer;
-
-  .hero-btn {
-  font-family: "Roboto", sans-serif; /* обов'язково */
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  /* інші твої стилі (color, background тощо) залишаються */
-}
-
-  /* Добавляем плавный переход для цвета */
+  /* Додаємо тінь та правильний transition */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -204,6 +201,7 @@ position: relative;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  margin-bottom: 8px;
 }
 /* Стили для текста под этими заголовками */
 .features-text {
@@ -296,7 +294,7 @@ position: relative;
   /* остальные твои свойства... */
 }
 .nav-link.current::after {
-  content: ""; /* Пустой контент, чтобы блок появился */
+  content: ""; 
   position: absolute; /* Рисочка будет "летать" над ссылкой */
   left: 0;
   bottom: -1px; /* Прижимаем к самому низу хедера */
@@ -393,7 +391,7 @@ img {
               0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-/* Добавь это, чтобы картинка всегда заполняла всю ширину карточки */
+
 .team-item img {
   display: block;
   width: 100%;
@@ -426,7 +424,9 @@ img {
   background-color: #f4f4fd; /* Той самий світло-сірий колір */
   border-radius: 4px; /* Закруглення кутів */
   margin-bottom: 8px; /* Відступ від боксу до заголовка Strategy */
+   border: 1px solid #8e8f99; /* Додай це */
 }
+
 
 /* 2. Специфические стили ТОЛЬКО для списка команды */
 .team-list {
@@ -472,7 +472,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Коли ми наводимо на посилання, overlay виїжджає нагору */
+/* посилання, overlay виїжджає нагору */
 .portfolio-link:hover .portfolio-overlay,
 .portfolio-link:focus .portfolio-overlay {
   transform: translateY(0);
@@ -635,7 +635,7 @@ a {
 /* Эффект наведения для логотипа */
 .logo:hover,
 .logo:focus {
-  color: #404bbf; /* Тот самый темный синий OCEAN */
+  color: #404bbf; /*синий OCEAN */
 }
 /* 2. Секция Hero (Темная полоса вверху) */
 .hero {
@@ -657,7 +657,7 @@ a {
 }
 
 /* Основной фон и отступы футера */
-/* Делаем футер темным и даем ему высоту */
+
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
@@ -669,7 +669,7 @@ a {
   align-items: baseline;
 }
 
-/* Настраиваем логотип */
+/* логотип */
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
@@ -682,7 +682,7 @@ a {
   letter-spacing: 0.03em;
 }
 
-/* ВОТ ЭТО ВЕРНЕТ ЛОГОТИП (сделает Studio белым) */
+/* ЛОГОТИП (сделает Studio белым) */
 .footer-logo .logo-light {
   color: #f4f4fd;
 }
@@ -696,7 +696,7 @@ a {
 }
  
 
-/* Футер з твоїми класами team-soc */
+/* Футер */
 
 .footer-team-soc {
   margin-left: 120px; /* Відступ вправо від логотипу */
@@ -711,7 +711,7 @@ a {
   margin-bottom: 16px;
 }
 
-/* Твій список іконок */
+/*список іконок */
 .team-soc-list {
   display: flex;
   gap: 16px;
@@ -720,7 +720,7 @@ a {
   margin: 0;
 }
 
-/* Стиль кола саме для футера (щоб він ставав зеленим) */
+/* Стиль кола саме для футера  */
 .footer-soc-link {
   width: 40px;
   height: 40px;
@@ -730,6 +730,7 @@ a {
   align-items: center;
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  gap: 16px;
 }
 
 .footer-soc-link:hover,
@@ -737,7 +738,7 @@ a {
   background-color: #31d0aa; /* Зелений колір при наведенні */
 }
 
-/* Твій клас для іконки (щоб вона була білою) */
+
 .team-soc-icon {
   fill: #f4f4fd;
 }
